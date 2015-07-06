@@ -4,31 +4,34 @@ html, body {
   width: 100%;
   height: 100%; }
 
-.main-page {
+body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   display: block; }
-  .main-page .contacts {
+  body .contacts {
+    display: inline-block;
     margin: 0;
     width: 20%;
     height: 100%;
     float: left;
-    display: inline-block;
     background-color: #094; }
-  .main-page .links {
+  body .links {
+    display: inline-block;
     margin: 0;
     width: 20%;
     height: 100%;
-    float: right;
-    display: inline-block;
+    float: left;
     background-color: #034; }
-  .main-page .chat-panel {
-    margin: 0 20% 0 20%;
-    height: 100%;
+  body .chat-panel {
     display: inline-block;
+    float: left;
+    width: 60%;
+    height: 100%;
     background-color: #043; }
-  .main-page .footer {
-    width: 100%;
-    clear: both; }
+
+header {
+  margin: 0;
+  height: 60px;
+  background-color: #546; }
