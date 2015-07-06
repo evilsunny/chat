@@ -1,0 +1,39 @@
+html, body { margin: 0; padding: 0; width:100%; height:100%; }
+
+.main-page {
+	width: 100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	.contacts {
+		margin: 0;
+		width: 20%;
+		height: 100%; 
+		float: left;
+		display: inline-block;
+		background-color: #094;
+	}
+
+	.links {
+		margin: 0;
+		width: 20%;
+		height: 100%; 
+		float: right;
+				display: inline-block;
+		background-color: #034;
+	}
+
+	.chat-panel {
+		margin: 0 20% 0 20%;
+		height: 100%; 
+				display: inline-block;
+
+		background-color: #043;
+	}
+
+	.footer {
+		width: 100%;
+		clear: both;
+	}
+}
