@@ -32,6 +32,12 @@ body {
     background-color: #043; }
 
 header {
+  padding: 2%;
   margin: 0;
   height: 60px;
-  background-color: #546; }
+  background-color: #546;
+  text-align: center; }
+  header h2 {
+    display: inline; }
+  header .logout {
+    float: right; }
