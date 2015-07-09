@@ -92,7 +92,7 @@ header {
     position: relative;
     border-radius: 5px;
     margin: 2px;
-    width: 90%; }
+    width: 92%; }
   .messagess .text:before, .input-message .text:before, .ouput-message .text:before {
     width: 0;
     height: 0;
@@ -106,6 +106,10 @@ header {
   background-color: blue;
   float: left;
   margin-left: 1%; }
+
+.input-message .time {
+  text-align: center;
+  left: 92%; }
 
 .input-message .name {
   text-align: left; }
@@ -122,6 +126,10 @@ header {
 
 .ouput-message .name {
   text-align: right; }
+
+.ouput-message .time {
+  text-align: center;
+  left: -2%; }
 
 .ouput-message .text:before {
   left: 100%;

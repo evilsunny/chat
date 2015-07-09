@@ -28,7 +28,7 @@
 				position: relative;
 				border-radius: 5px;
 				margin: 2px;
-				width:90%;
+				width:92%;
 			} 
 
 			.text:before {
@@ -54,8 +54,12 @@
 			float: left;
 			margin-left: 1%;
 		}	
+		.time {
+		  	text-align: center;
+		    left: 92%;
+		}
 
-		.name {
+		.name { 
 		text-align: left;
 		}
 
@@ -63,7 +67,7 @@
 			right: 100%;
 			margin-right: -35px;
 			border-bottom: 10px solid black
-	}	
+		}	
 
 	}
 
@@ -78,6 +82,11 @@
 		}
 		.name {
 		text-align: right;
+		}
+
+		.time{
+			text-align: center;
+		    left: -2%;
 		}
 		.text:before {
 				left: 100%;
