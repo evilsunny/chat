@@ -69,8 +69,9 @@ header {
   margin: 25px 15px;
   padding: 0; }
 
-.messages {
-  margin: 15px 0px; }
+.chat-panel {
+  margin: 0;
+  padding: 0; }
 
 .messagess, .input-message, .ouput-message {
   margin: 20px 5px;
@@ -97,21 +98,32 @@ header {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    content: ' ';
+    content: '';
     top: -10px;
-    position: absolute;
-    color: black; }
+    position: absolute; }
 
 .input-message .text {
   background-color: blue;
-  float: left; }
+  float: left;
+  margin-left: 1%; }
 
 .input-message .name {
-  float: left; }
+  text-align: left; }
+
+.input-message .text:before {
+  right: 100%;
+  margin-right: -35px;
+  border-bottom: 10px solid black; }
 
 .ouput-message .text {
   background-color: green;
-  float: right; }
+  float: right;
+  margin-right: 1%; }
 
 .ouput-message .name {
-  float: right; }
+  text-align: right; }
+
+.ouput-message .text:before {
+  left: 100%;
+  margin-left: -35px;
+  border-bottom: 10px solid black; }

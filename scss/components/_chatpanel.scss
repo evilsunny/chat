@@ -1,75 +1,87 @@
-.messages {
-	margin: 15px 0px;	
+.chat-panel  {
+	margin: 0;
+	padding: 0;
 }
+	.messagess {
+			margin: 20px 5px;
+			padding:0;
+			width: 100%;
+			display: inline-block;
+			 position: relative;
 
-.messagess {
-		margin: 20px 5px;
-		padding:0;
-		width: 100%;
-		display: inline-block;
-		 position: relative;
+			.name { 
+				display: block;
+				margin: 10px 20px;
+				 text-align: center;
 
-		.name { 
-			display: block;
-			margin: 10px 20px;
-			 text-align: center;
+			}
 
-		}
+			.time {
+				width:9%;
+		 		position: absolute;
+		 		display: inline-block;	
+		 		
+			}
 
-		.time {
-			width:9%;
-	 		position: absolute;
-	 		display: inline-block;	
-	 		
-		}
+			.text {
+				padding: 3px;
+				position: relative;
+				border-radius: 5px;
+				margin: 2px;
+				width:90%;
+			} 
+
+			.text:before {
+			    width: 0;
+			    height: 0;
+			    border-left: 10px solid transparent;
+			    border-right: 10px solid transparent;
+			    content: '';
+			    top: -10px;
+			    position: absolute;
+	
+	  		}
+
+
+	}
+
+
+	.input-message {
+		@extend .messagess;
 
 		.text {
-			padding: 3px;
-			position: relative;
-			border-radius: 5px;
-			margin: 2px;
-			width:90%;
-		} 
+			background-color: blue;
+			float: left;
+			margin-left: 1%;
+		}	
+
+		.name {
+		text-align: left;
+		}
 
 		.text:before {
-		    width: 0;
-		    height: 0;
-		    border-left: 10px solid transparent;
-		    border-right: 10px solid transparent;
-		    content: ' ';
-		    top: -10px;
-		    position: absolute;
-		    color: black;
-  		}
-
-
-}
-
-
-.input-message {
-	@extend .messagess;
-
-	.text {
-		background-color: blue;
-		float: left;
+			right: 100%;
+			margin-right: -35px;
+			border-bottom: 10px solid black
 	}	
 
-	.name{
-	float: left;
 	}
 
-}
 
+	.ouput-message {
+		@extend .messagess;
 
-.ouput-message {
-	@extend .messagess;
-
-	.text {
-		background-color: green;
-		float: right;
+		.text {
+			background-color: green;
+			float: right;
+			margin-right:1%;
+		}
+		.name {
+		text-align: right;
+		}
+		.text:before {
+				left: 100%;
+    			margin-left: -35px;
+    			border-bottom: 10px solid black
+    	}
 	}
-
-	.name{
-	float: right;
-	}
-}
