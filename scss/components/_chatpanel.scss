@@ -1,0 +1,75 @@
+.messages {
+	margin: 15px 0px;	
+}
+
+.messagess {
+		margin: 20px 5px;
+		padding:0;
+		width: 100%;
+		display: inline-block;
+		 position: relative;
+
+		.name { 
+			display: block;
+			margin: 10px 20px;
+			 text-align: center;
+
+		}
+
+		.time {
+			width:9%;
+	 		position: absolute;
+	 		display: inline-block;	
+	 		
+		}
+
+		.text {
+			padding: 3px;
+			position: relative;
+			border-radius: 5px;
+			margin: 2px;
+			width:90%;
+		} 
+
+		.text:before {
+		    width: 0;
+		    height: 0;
+		    border-left: 10px solid transparent;
+		    border-right: 10px solid transparent;
+		    content: ' ';
+		    top: -10px;
+		    position: absolute;
+		    color: black;
+  		}
+
+
+}
+
+
+.input-message {
+	@extend .messagess;
+
+	.text {
+		background-color: blue;
+		float: left;
+	}	
+
+	.name{
+	float: left;
+	}
+
+}
+
+
+.ouput-message {
+	@extend .messagess;
+
+	.text {
+		background-color: green;
+		float: right;
+	}
+
+	.name{
+	float: right;
+	}
+}
