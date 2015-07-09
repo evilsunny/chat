@@ -1,4 +1,10 @@
 @import "base/mixins";
+@import "base/variables";
+
+@import "partials/chat-panel";
+@import "partials/contacts";
+@import "partials/header";
+@import "partials/links";
 
 @import "components/mainpage";
 @import "components/header";

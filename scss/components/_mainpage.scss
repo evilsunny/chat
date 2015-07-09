@@ -6,32 +6,6 @@ body {
 	margin: 0;
 	padding: 0;
 	display: block;
-	.contacts {
-		box-sizing: border-box;
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		width: 20%;
-		height: 100%; 
-		float: left;
-		background-color: #094;
-	}
 
-	.links {
-		display: inline-block;
-		margin: 0;
-		width: 20%;
-		height: 100%; 
-		float: left;
-		background-color: #E7EBF4;
-	}
-
-	.chat-panel {
-		display: inline-block;
-		float: left;
-		width: 60%;	
-		height: 100%; 
-		background-color: #043;
-	}
 
 }

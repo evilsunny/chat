@@ -54,7 +54,7 @@
 		overflow: hidden;
 
 		.text {
-			background-color: blue;
+			background-color: $in-message-color;
 			float: left;
 			margin-left: 1%;
 		}	
@@ -64,13 +64,13 @@
 		}
 
 		.name { 
-		text-align: left;
+			text-align: left;
 		}
 
 		.text:before {
 			right: 100%;
 			margin-right: -35px;
-			border-bottom: 10px solid black
+			border-bottom: 10px solid  $in-message-color
 		}	
 
 	}
@@ -80,7 +80,7 @@
 		@extend .messagess;
 
 		.text {
-			background-color: green;
+			background-color: $out-message-color;
 			float: right;
 			margin-right:1%;
 		}
@@ -95,6 +95,6 @@
 		.text:before {
 				left: 100%;
     			margin-left: -35px;
-    			border-bottom: 10px solid black
+    			border-bottom: 10px solid $out-message-color
     	}
 	}
