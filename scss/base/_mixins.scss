@@ -5,12 +5,6 @@
   border-radius:          $radius;
 }
 
-@mixin box-sizing() {
-
-  -moz-box-sizing:    border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
-}
 
 @mixin border($width, $color) {
   border: $width solid $color;

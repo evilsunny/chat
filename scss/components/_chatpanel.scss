@@ -19,16 +19,19 @@
 			.time {
 				width:9%;
 		 		position: absolute;
+		 		 box-sizing: border-box;
 		 		display: inline-block;	
-		 		
+		 		top		: 60%;
 			}
 
 			.text {
-				padding: 3px;
+				padding: 7px;
 				position: relative;
 				border-radius: 5px;
 				margin: 2px;
-				width:92%;
+				width:91%;
+				height: auto;
+				
 			} 
 
 			.text:before {
@@ -48,6 +51,7 @@
 
 	.input-message {
 		@extend .messagess;
+		overflow: hidden;
 
 		.text {
 			background-color: blue;

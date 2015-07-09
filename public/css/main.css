@@ -25,7 +25,7 @@ body {
     width: 20%;
     height: 100%;
     float: left;
-    background-color: #034; }
+    background-color: #E7EBF4; }
   body .chat-panel {
     display: inline-block;
     float: left;
@@ -42,7 +42,9 @@ header {
   header h2 {
     display: inline; }
   header .logout {
-    float: right; }
+    float: right;
+    position: relative;
+    top: 15%; }
 
 .contacts .contact-list {
   list-style-type: none;
@@ -69,6 +71,20 @@ header {
   margin: 25px 15px;
   padding: 0; }
 
+.links .link {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap; }
+
+.links .link:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #efecf2 95%); }
+
 .chat-panel {
   margin: 0;
   padding: 0; }
@@ -86,13 +102,16 @@ header {
   .messagess .time, .input-message .time, .ouput-message .time {
     width: 9%;
     position: absolute;
-    display: inline-block; }
+    box-sizing: border-box;
+    display: inline-block;
+    top: 60%; }
   .messagess .text, .input-message .text, .ouput-message .text {
-    padding: 3px;
+    padding: 7px;
     position: relative;
     border-radius: 5px;
     margin: 2px;
-    width: 92%; }
+    width: 91%;
+    height: auto; }
   .messagess .text:before, .input-message .text:before, .ouput-message .text:before {
     width: 0;
     height: 0;
@@ -102,22 +121,21 @@ header {
     top: -10px;
     position: absolute; }
 
-.input-message .text {
-  background-color: blue;
-  float: left;
-  margin-left: 1%; }
-
-.input-message .time {
-  text-align: center;
-  left: 92%; }
-
-.input-message .name {
-  text-align: left; }
-
-.input-message .text:before {
-  right: 100%;
-  margin-right: -35px;
-  border-bottom: 10px solid black; }
+.input-message {
+  overflow: hidden; }
+  .input-message .text {
+    background-color: blue;
+    float: left;
+    margin-left: 1%; }
+  .input-message .time {
+    text-align: center;
+    left: 92%; }
+  .input-message .name {
+    text-align: left; }
+  .input-message .text:before {
+    right: 100%;
+    margin-right: -35px;
+    border-bottom: 10px solid black; }
 
 .ouput-message .text {
   background-color: green;
