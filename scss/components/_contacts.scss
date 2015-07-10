@@ -1,10 +1,9 @@
-.contacts {
-
 .contact-list {
 	list-style-type: none;
 	margin: 25px 15px;
 	padding:0;
 	color: $contacts-font-color;
+	font-size: $contact-font-size;
 }
 
 	.status {
@@ -26,4 +25,3 @@
  		background-color:$offline-color;
 	}
 
-}

@@ -1,18 +1,17 @@
-.links {
-	
-	.link-list {
-	list-style-type: none;
-	margin: 25px 15px;
-	padding:0;
+.link-list {
+    	list-style-type: none;
+    	margin: 25px 15px;
+    	padding:0;
 }
+
 .link{
-	 overflow: hidden;
+	  overflow: hidden;
 	  position: relative;
     white-space: nowrap;
 }
 
 .link:after {
-     content: '';
+      content: '';
       position: absolute;
       top: 0;
       left: 80%;

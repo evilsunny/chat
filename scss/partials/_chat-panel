@@ -2,7 +2,7 @@
 		display: inline-block;
 		float: left;
 		width: 61%;	
-		height: 92%; 
+		height: 90.5%; 
 		overflow-y: auto;
 		overflow-x: hidden;
 		background-color: $main-window-color;

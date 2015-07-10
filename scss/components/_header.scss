@@ -1,8 +1,7 @@
-header {
-
 	.title {
 		display: inline;
 		color: $title-font-color;
+		font-size: $header-font-size;
 	}
 
 	.logout {	
@@ -10,5 +9,3 @@ header {
 		position: relative;
 		top: 15%;
 	}
-
-}
