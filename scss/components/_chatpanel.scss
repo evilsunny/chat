@@ -3,25 +3,28 @@
 	padding: 0;
 }
 	.messagess {
-			margin: 20px 5px;
+			margin: 20px 5px 5px 5px;
 			padding:0;
 			width: 100%;
 			display: inline-block;
-			 position: relative;
+			position: relative;
 
 			.name { 
 				display: block;
 				margin: 10px 20px;
-				 text-align: center;
-
+				text-align: center;
+				font-weight: bold;
+				color: $name-font-color;
 			}
-
+ 
 			.time {
-				width:9%;
-		 		position: absolute;
-		 		 box-sizing: border-box;
+				width:8%;
+ 		 		box-sizing: border-box;
 		 		display: inline-block;	
-		 		top		: 60%;
+		 		top	: 60%;
+		 		position:absolute;
+		 		color: $time-font-color;
+		 		font-weight: bold;
 			}
 
 			.text {
@@ -29,7 +32,7 @@
 				position: relative;
 				border-radius: 5px;
 				margin: 2px;
-				width:91%;
+				width:89%;
 				height: auto;
 				
 			} 
@@ -51,7 +54,6 @@
 
 	.input-message {
 		@extend .messagess;
-		overflow: hidden;
 
 		.text {
 			background-color: $in-message-color;
@@ -60,7 +62,7 @@
 		}	
 		.time {
 		  	text-align: center;
-		    left: 92%;
+		    left: 91%;
 		}
 
 		.name { 
@@ -82,10 +84,11 @@
 		.text {
 			background-color: $out-message-color;
 			float: right;
-			margin-right:1%;
+			margin-right:2%;
 		}
 		.name {
-		text-align: right;
+			text-align: right;
+			margin-right:4%;
 		}
 
 		.time{

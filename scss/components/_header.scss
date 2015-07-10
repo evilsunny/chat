@@ -1,7 +1,8 @@
 header {
 
-	h2 {
+	.title {
 		display: inline;
+		color: $title-font-color;
 	}
 
 	.logout {	

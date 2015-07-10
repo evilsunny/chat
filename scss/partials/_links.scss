@@ -1,8 +1,10 @@
 	.links {
 		display: inline-block;
 		margin: 0;
-		width: 20%;
-		height: 100%; 
+		width: 19%;
+		height: 92%; 
 		float: left;
 		background-color: $links-block-color;
+		overflow: auto;
+
 	}
